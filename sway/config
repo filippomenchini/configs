@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 ### Font settings
-font pango: JetBrainsMono Nerd Font 10
+font pango: JetBrainsMono Nerd Font 12
 
 ### Gaps settings
 gaps inner 8px
@@ -25,13 +25,13 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show run
+set $menu fuzzel -b 000000ff -t ffffffff -m 00ff00ff -M 00ff00ff -s 38027dff -r 0 -C 38027dff -w 60 --show run
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/filippo/Immagini/wallpaper.jpg fill
+output * bg /home/filippo/images/wallpaper.jpg fill
 #
 # Example configuration:
 #
