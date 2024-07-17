@@ -11,6 +11,9 @@ font pango: JetBrainsMono Nerd Font 12
 gaps inner 8px
 gaps outer 4px
 
+### Cursor settings
+seat * hide_cursor when-typing enable 
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
