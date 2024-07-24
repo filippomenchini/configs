@@ -12,7 +12,10 @@ gaps inner 8px
 gaps outer 4px
 
 ### Cursor settings
-seat * hide_cursor when-typing enable 
+# seat * hide_cursor when-typing enable 
+
+### Focused window colors
+client.focused #38027dff #38027dff #FFFFFFFF #38027dff
 
 ### Variables
 #
