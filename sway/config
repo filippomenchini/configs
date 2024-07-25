@@ -16,6 +16,21 @@ gaps outer 4px
 
 ### Focused window colors
 client.focused #38027dff #38027dff #FFFFFFFF #38027dff
+client.unfocused #00000000 #00000000 #FFFFFFFF #00000000
+
+### Window borders
+for_window [class="^.*"] border pixel 2
+
+### Android emulator window
+# Ensures that the emulator window is floating and movable
+for_window [title="Android Emulator - *"] {
+  floating enable
+  border normal
+}
+# Moves the emulator utility window to the scratchpad, as I don't need it
+for_window [title="Emulator" window_type="utility"] move scratchpad
+
+### START OF STANDARD CONFIG ###
 
 ### Variables
 #
@@ -214,6 +229,8 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+### END OF STANDARD CONFIG
+
 #
 # Status Bar:
 #
@@ -227,8 +244,9 @@ bar {
 
     colors {
         statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #ffffff
+        background #000000
+        focused_workspace #38027dff #38027dff #ffffff
+        inactive_workspace #000000 #000000 #ffffff
     }
 }
 
